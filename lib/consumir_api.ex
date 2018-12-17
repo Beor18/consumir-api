@@ -1,4 +1,5 @@
 defmodule ConsumirApi do
+    use Application
     def bitcoin do
       HTTPotion.start
       request("https://api.coinmarketcap.com/v1/ticker/bitcoin/")
