@@ -1,5 +1,6 @@
 defmodule ConsumirApi do
     def bitcoin do
+      HTTPotion.start
       request("https://api.coinmarketcap.com/v1/ticker/bitcoin/")
       |> body
       |> parse_body_to_tuple
