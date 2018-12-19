@@ -8,5 +8,8 @@ defmodule Mix.Tasks.MixConsumirApi do
         end_ms = System.monotonic_time(:milliseconds)
         diff = end_ms - start_ms
         Logger.info "La respuesta a la api fue en #{diff} ms"
+        IO.puts ""
+        Logger.info "Iterando sobre todas las teclas del mapa manteniendo el orden de las teclas"
+        ConsumirApi.interar
     end
 end
